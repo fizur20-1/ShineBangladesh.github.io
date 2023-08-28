@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Shine International Ltd.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Additional styles for the header */
+        #header {
+            text-align: center;
+            padding: 3rem;
+            background-color: #f3d00be0; /* Adjust the background color as needed */
+            color: hsl(172, 81%, 35%); /* Adjust the text color as needed */
+            font-weight: bold;
+        }
+
+        /* Style for the navigation links */
+        .header-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header-links li {
+            display: inline;
+            margin-right: 1rem; /* Adjust spacing between links */
+        }
+
+        .header-links li a {
+            color: rgba(25, 85, 145, 0.945);
+            text-decoration: none;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .header-links li a::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: rgb(1, 109, 19);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .header-links li a:hover::before {
+            width: 100%;
+            opacity: 1;
+            transform: translateX(-50%) scaleY(1.5);
+        }
+
+        .header-links li a.active {
+            color: #000; /* Change to the desired color for highlighting */
+            text-decoration: none; /* Add underline or customize as needed */
+        }
+
+        /* Style for category grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin-top: 30px;
+        }
+
+        .category-card {
+            border: 1px solid #f2f2fd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-card h3 {
+            margin-top: 0;
+        }
+         .sidebar {
+    position: fixed;
+    top: 11%;
+    left: 0;
+    width: 256px;
+    height: 90vh;
+    background-color: #ffffffa4;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar-links li a {
+    text-decoration: none;
+    color: black !important;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.sidebar-links li a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgb(1, 109, 19);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.sidebar-links li a:hover,
+.sidebar-links li a.active {
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar-links li a:hover::before,
+.sidebar-links li a.active::before {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1.5);
+}
+
+
+html {
+            scroll-behavior: smooth;
+    }  
+
+/* Add this CSS to your stylesheet */
+ .box.medium {
+    width: 200px; 
+    height: auto; 
+    margin: 20px; 
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+.box.medium .image {
+    height: 150px; 
+
+    text-align: left; 
+    margin: 0 auto; 
+    padding: 0;
+}
+
+
+.header, .advertisement {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* .divider {
+    border-top: 1px solid black;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+} */
+
+.advertisement p {
+    font-style: italic;
+} 
+.bold-heading {
+    font-weight: bold;
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="index.html">Shine <span>International Ltd.</span></a></div>
+        <nav class="header-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="productList.html">Product List</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+            
+        </nav>
+       
+    </header> 
+
+    
+
+
+    <!-- Category Grid -->
+    <section id="one" class="wrapper style2">
+
+        <div class="sidebar">
+            <h2 text="bold">Category List</h2>
+            <ul class="sidebar-links">
+                <li><a href="#paintCoating">Paint & Coating</a></li>
+                <br>
+                <li><a href="#ceramicsTiles">Ceramics & Tiles</a></li>
+                <br>
+                <li><a href="#resin">Resin</a></li>
+                <br>
+                <li><a href="#solvents">Solvents</a></li>
+                <br>
+                <li><a href="#titaniumDioxide">Titanium Dioxide</a></li>
+                <br>
+                <li><a href="#solventDyes">Solvent Dyes</a></li>
+            </ul>
+        </div>
+
+
+        <div class="inner">
+            <div class="grid-style">
+
+
+                <!-- <div class="box" >   -->
+                    <div class="box"id="paintCoating"> 
+                    <div class="image fit">
+                        <img src="images/pic01.jpg" alt="" />
+                    </div>
+                   <div class="content"> 
+                        <div class="category">
+                            <header class="align-center">
+                            <h2>Paint & Coating</h2>
+                            
+                            <p>Explore our range of Paint & Coating products.</p>
+                        </header>
+                        <p> We have an arsenal of tanks ready to provide drumming and other distribution services:
+                            Product Sourcing
+                            Bulk Purchases
+                            Drumming & Decanting
+                            Repackaging</p>
+                           
+                            <footer class="align-center">
+                                <a href="productList.html?category=paintCoating"class="button alt">View Product List</a>
+                            </footer>
+                            
+                        </div>        
+                        </div>         
+                
+                </div>
+
+                     <!-- <div class="box"> -->
+                    <div class="box" id="ceramicsTiles">  
+                        <div class="image fit">
+                            <img src="images/pic02.jpg" alt="" />
+                        </div>
+                       <div class="content"> 
+                            <div class="category">
+                                <header class="align-center">
+                                <h2>Ceramics & Tiles</h2>
+                                
+                                <p>Explore our range of Ceramics & Tiles products.</p>
+                            </header>
+                            <p> We have an arsenal of tanks ready to provide drumming and other distribution services:
+                                Product Sourcing
+                                Bulk Purchases
+                                Drumming & Decanting
+                                Repackaging</p>
+                               
+                                <footer class="align-center">
+                                    <a href="productList.html?category=ceramicsTiles"class="button alt">View Product List</a>
+                                </footer>
+                                
+                            </div>        
+                            </div>         
+                    
+                    </div>
+
+                    <div class="box" id="resin" >
+                        <div class="image fit">
+                            <img src="images/pic03.jpg" alt="" />
+                        </div>
+                        <div class="content"> 
+                            <div class="category">
+                                <header class="align-center">
+                                <h2>Resin</h2>
+                                <p>Discover our collection of Resin products.</p>
+                            </header>
+                            <p> We have an arsenal of tanks ready to provide drumming and other distribution services:
+                                Product Sourcing
+                                Bulk Purchases
+                                Drumming & Decanting
+                                Repackaging</p>
+                                
+                                <footer class="align-center">
+                                    <a href="productList.html?category=resin" class="button alt">View Product List</a>
+                                </footer> 
+                               
+                            </div>        
+                               
+                            </div> 
+                </div>
+                <div class="box"  id="solvents">
+                    <div class="image fit">
+                        <img src="images/pic01.jpg" alt="" />
+                    </div>
+                    <div class="content"> 
+                        <div class="category">
+                            <header class="align-center">
+                            <h2>Solvents</h2>
+                            <p>Discover our collection of Solvents products.</p>
+                        </header>
+                        <p> We have an arsenal of tanks ready to provide drumming and other distribution services:
+                            Product Sourcing
+                            Bulk Purchases
+                            Drumming & Decanting
+                            Repackaging</p>
+                            
+                            <footer class="align-center">
+                                <a href="productList.html?category=solvents" class="button alt">View Product List</a>
+                            </footer> 
+                           
+                        </div>        
+                           
+                        </div> 
+            </div>
+            <div class="box" id="titaniumDioxide">
+                <div class="image fit">
+                    <img src="images/pic02.jpg" alt="" />
+                </div>
+                <div class="content"> 
+                    <div class="category">
+                        <header class="align-center">
+                        <h2>Titanium Dioxide</h2>
+                        <p>Discover our collection of Titanium Dioxide products.</p>
+                    </header>
+                    <p> We have an arsenal of tanks ready to provide drumming and other distribution services:
+                        Product Sourcing
+                        Bulk Purchases
+                        Drumming & Decanting
+                        Repackaging</p>
+                        
+                        <footer class="align-center">
+                            <a href="productList.html?category=titaniumDioxide" class="button alt">View Product List</a>
+                        </footer> 
+                       
+                    </div>        
+                       
+                    </div> 
+        </div>
+        <div class="box"  id="solventDyes">
+            <div class="image fit">
+                <img src="images/pic04.jpg" alt="" />
+            </div>
+            <div class="content"> 
+                <div class="category">
+                    <header class="align-center">
+                    <h2>Solvent Dyes</h2>
+                    <p>Discover our collection of Solvent Dyes products.</p>
+                </header>
+                <p> We have an arsenal of tanks ready to provide drumming and other distribution services:
+                    Product Sourcing
+                    Bulk Purchases
+                    Drumming & Decanting
+                    Repackaging</p>
+                    
+                    <footer class="align-center">
+                        <a href="productList.html?category=solventDyes" class="button alt">View Product List</a>
+                    </footer> 
+                   
+                </div>        
+                   
+                </div> 
+        </div>
+                
+            </div>
+            </div>
+            
+        </div>
+    </section>
+<!-- Two -->
+<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>Get Connected Via Mail or Cell </p>
+            <h2> shine.bdlt@gmail.com  | 01917263745 </h2>
+        </header>
+    </div>
+</section>
+
+
+<section id="one" class="wrapper style2">
+    <div class="inner">
+        
+        <!-- <div class="header"> -->
+            
+            <header class="align-center">
+            
+                <p class="special">More than HUNDRED succesfull Services !</p>
+            
+                <h2 class="bold-heading">Our Happy Customers</h2>
+             
+            </header>
+        <!-- </div> -->
+      
+        <!-- <div class="divider"></div> -->
+        <div class="grid-style">
+            <section id="one" class="wrapper style2">
+                <div class="inner">
+                    <div class="grid-style">
+                        <div class="box medium">
+                            <div class="image fit">
+                                <img src="images/NGT.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="box medium">
+                            <div class="image fit">
+                                <img src="images/image.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="box medium">
+                            <div class="image fit">
+                                <img src="images/KM.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="box medium">
+                            <div class="image fit">
+                                <img src="images/HuntsMan.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="box medium">
+                            <div class="image fit">
+                                <img src="images/IEC1.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- <div class="divider"></div> -->
+        <header class="align-center">
+        <div class="advertisement">
+
+            <p class="special"></p>
+            <p> Proper Trust and Commintment Can Build An Empire </p>
+        </div>
+        </header>
+    </div>
+</section>
+</div>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper style2">
+    <div class="inner">
+        <section class="banner">   
+            <article>
+                <div class="inner">
+                    <ul class="icons">
+                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    Made with <a href="https://www.linkedin.com/in/mostafizur-rahman-4074931ab/">Maze Brains</a>.
+                </div> 
+            </article> 
+        </section>
+
+        <div class="copyright">
+            Made with <a href="https://www.linkedin.com/in/mostafizur-rahman-4074931ab/">Maze Brains</a>.
+        </div>
+
+        </div> 
+        </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Add the "active" class to the current navigation link
+        var currentPage = window.location.pathname.split("/").pop(); // Get the current page's filename
+        var navigationLinks = document.querySelectorAll(".header-links li a");
+    
+        navigationLinks.forEach(function(link) {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+        <script>
+            // Add event listeners to "View Products" buttons
+            var viewProductsButtons = document.querySelectorAll(".view-products-button");
+            viewProductsButtons.forEach(function(button) {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    var category = button.getAttribute("data-category");
+                    window.location.href = "productList.html?category=" + category;
+                });
+            });
+        </script>
+        <!-- Add this script to your HTML -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".sidebar-links li a").click(function() {
+            $(".sidebar-links li a").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
+</body>
+</html>

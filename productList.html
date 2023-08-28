@@ -1,0 +1,614 @@
+<!DOCTYPE HTML> 
+ <html>
+	<head>
+		<title>Shine International Ltd.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head> 
+
+	 <head>
+		<title>Shine International Ltd.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Additional styles for the header */
+			#header {
+				text-align: center;
+				padding: 3rem;
+				background-color: #f3d00be0; /* Adjust the background color as needed */
+				color: hsl(172, 81%, 35%); /* Adjust the text color as needed */
+				font-weight: bold;
+			}
+
+			#menu {
+				display: none; /* Hide the original menu */
+			}
+
+			/* Style for the navigation links */
+			.header-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+        }
+
+			.header-links li {
+				display: inline;
+				margin-right: 1rem; 
+                /* Adjust spacing between links */
+			 }
+
+			 .header-links li a {
+            color: rgba(25, 85, 145, 0.945);
+            text-decoration: none;
+            position: relative; 
+            font-weight: bold; 
+        } 
+        .header-links li a::before {
+            content: "";
+            position: absolute;
+            bottom: -5px; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: rgb(1, 109, 19);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .header-links li a:hover::before {
+            width: 100%;
+            opacity: 1;
+            transform: translateX(-50%) scaleY(1.5); 
+        }
+		.search-container {
+            display: flex ;
+            align-items: center;
+            max-width: 400px;
+            margin: 20PX auto 0;
+        }
+
+        .search-input {
+            flex-grow: 2;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .search-button {
+            background-color: rgba(1, 109, 19, 0.945);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            padding: 5px 5px;
+            font-size: 10px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .search-button:hover {
+            background-color: rgba(1, 109, 19, 0.7);
+        }
+		.search-bar button {
+        cursor: pointer; /* Change cursor to pointer on hover */
+    	}
+		.header-links li a.active {
+        color: #000; /* Change to the desired color for highlighting */
+        text-decoration: none; /* Add underline or customize as needed */
+   		 }
+
+		</style>
+	</head> 
+
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Shine <span>International Ltd.</span></a></div>
+				<nav class="header-links">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="category.html">Category</a></li>
+						<li><a href="productList.html">Product List</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="aboutUs.html">About Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+            <!-- Product List -->
+            <section id="product-list" class="wrapper style2">
+                <div class="inner">
+                    <div class="search-bar">
+                        <div class="search-container">
+                            <input id="searchInput" class="search-input" type="text" placeholder="Search products...">
+                            <button id="searchButton" class="search-button" type="button">Search</button>
+                        </div>
+                    </div>
+
+
+                    <div class="category-products"> 
+                        <!-- <div class="product" data-category="resin"> -->
+                            <div class="product-list" data-category="paintCoating"></div>
+                            <!-- dfdg -->
+                            <div class="category-container" data-category="paintCoating">
+                            <h2>Paint & Coating</h2>
+            
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Barytes Powder (Natural Barium Sulphate)</h3>
+                                <p>Description of Barytes Powder (Natural Barium Sulphate) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Calcium Carbonate (Coated/Uncoated)</h3>
+                                <p>Description of Calcium Carbonate (Coated/Uncoated) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Glass Microsphere (for Road Marking paint)</h3>
+                                <p>Description of Glass Microsphere (for Road Marking paint) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Carboxy Methyl Cellulose (CMC)</h3>
+                                <p>Description of Carboxy Methyl Cellulose (CMC) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Hydroxy Ethyl Cellulose (HEC)</h3>
+                                <p>Description of Hydroxy Ethyl Cellulose (HEC) for Paint & Coating category.</p>
+                            </div>
+
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Alcohol Easter C-12/DN-12 (Texanol) </h3>
+                                <p>Description of Alcohol Easter C-12/DN-12 (Texanol) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Quick Lime (lump/powder)</h3>
+                                <p>Description of Quick Lime (lump/powder) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Talc Powder</h3>
+                                <p>Description of Talc Powder for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Pentaerythritol 98%</h3>
+                                <p>Description of Pentaerythritol 98% for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Calcined Kaolin</h3>
+                                <p>Description of Calcined Kaolin for Paint & Coating category.</p>
+                            </div>
+
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Precipiated Barium Sulphate </h3>
+                                <p>Description of Precipiated Barium Sulphate for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Calcium Chloride (Fused/Anhydrous powder)</h3>
+                                <p>Description of Calcium Chloride (Fused/Anhydrous powder) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Titanium Dioxide Rutile</h3>
+                                <p>Description of Titanium Dioxide Rutile for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Aluminium Paste (Leafing/Non Leafing)</h3>
+                                <p>Description of Aluminium Paste (Leafing/Non Leafing) for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>C5 Hydrocarbon Resin</h3>
+                                <p>Description of C5 Hydrocarbon Resin for Paint & Coating category.</p>
+                            </div>
+
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>C9 Petroleum Resin </h3>
+                                <p>Description of C9 Petroleum Resin for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Silica Powder/ Quartz/ Feldspar/Dolomite</h3>
+                                <p>Description of Silica Powder/ Quartz/ Feldspar/Dolomite for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Lithium Hydroxide</h3>
+                                <p>Description of Lithium Hydroxide for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Zinc Stearate</h3>
+                                <p>Description of Zinc Stearate for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Phthalic Anhydride</h3>
+                                <p>Description of Phthalic Anhydride for Paint & Coating category.</p>
+                            </div>
+
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Xylene </h3>
+                                <p>Description of Xylene for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Toluene</h3>
+                                <p>Description of Toluene for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Styrne Monomer</h3>
+                                <p>Description of Styrne Monomer for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>MMA</h3>
+                                <p>Description of MMA for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Butyle Acrylite</h3>
+                                <p>Description of Butyle Acrylite for Paint & Coating category.</p>
+                            </div>
+
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Propele Glycolo </h3>
+                                <p>Description of Propele Glycolo for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Methanol</h3>
+                                <p>Description of Methanol for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Ultramarine Blue</h3>
+                                <p>Description of Ultramarine Blue for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Glycerine</h3>
+                                <p>Description of Glycerine for Paint & Coating category.</p>
+                            </div>
+                            <div class="product paintCoating" data-category="paintCoating">
+                                <h3>Acrylic Acid</h3>
+                                <p>Description of Acrylic Acid for Paint & Coating category.</p>
+                            </div>
+
+                        </div>
+                        </div>
+
+            
+                    <div class="category-products">
+                        <div class="product-list" data-category="ceramicsTiles">
+                            <!-- hjh -->
+                            <div class="category-container" data-category="ceramicsTiles">
+
+                            <h2>Ceramics & Tiles</h2>
+            
+                            
+                            <div class="product ceramicsTiles"data-category="ceramicsTiles" >
+                                <h3>Soda Feldspar </h3>
+                               
+                                <p>Description of Soda Feldspar for Ceramics & Tiles category.</p>
+                            </div>
+            
+                            
+                            <div class="product ceramicsTiles"data-category="ceramicsTiles" >
+                                <h3>Quartz</h3>
+                                
+                                <p>Description of Quartz for Ceramics & Tiles category.</p>
+                                    
+                            </div>
+                            <div class="product ceramicsTiles"data-category="ceramicsTiles" >
+                                <h3>Ball Clay </h3>
+                               
+                                
+                                <p>Description of Ball Clay for Ceramics & Tiles category.</p>
+                                    
+                            </div>
+                            <div class="product ceramicsTiles"data-category="ceramicsTiles" >
+                                <h3>Zirconium Silicate</h3>
+                                
+                                
+                                <p>Description of Zirconium Silicate for Ceramics & Tiles category.</p>
+                                    
+                            </div>
+                            <div class="product ceramicsTiles"data-category="ceramicsTiles" >
+                                <h3>Kaolin Clay</h3>
+                                
+                                
+                                <p>Description of Kaolin Clay for Ceramics & Tiles category.</p>
+                                    
+                            </div>
+
+
+            
+                            <!-- Add more products for the Soap category with data-category="soap" -->
+            
+                        </div>
+                        </div>
+                    </div>
+        
+                        <!-- Resin Category -->
+                        <!-- <div class="product-list"> -->
+                            <div class="category-products"> 
+                            <!-- <div class="product" data-category="resin"> -->
+                                <div class="product-list" data-category="resin"></div>
+                                <!-- dfdg -->
+                                <div class="category-container" data-category="resin">
+                                <h2>Resin</h2>
+                
+                                <div class="product resin" data-category="resin">
+                                    <h3>Polyamide Resin </h3>
+                                    <p>Description of Polyamide Resin for Resin category.</p>
+                                </div>
+                                <div class="product resin" data-category="resin">
+                                    <h3>Nytro cellulose Resin</h3>
+                                    <p>Description of Nytro cellulose Resin for Resin category.</p>
+                                </div>
+                                <div class="product resin" data-category="resin">
+                                    <h3>Vinyl Resin</h3>
+                                    <p>Description of Vinyl Resin for Resin category.</p>
+                                </div>
+                                <div class="product resin" data-category="resin">
+                                    <h3>EVA 39%</h3>
+                                    <p>Description of EVA 39% for Resin category.</p>
+                                </div>
+                                <div class="product resin" data-category="resin">
+                                    <h3>Melamine</h3>
+                                    <p>Description of Melamine for Resin category.</p>
+                                </div>
+
+                            </div>
+                            </div>
+
+                            <div class="category-products"> 
+                                <!-- <div class="product" data-category="resin"> -->
+                                    <div class="product-list" data-category="solvents"></div>
+                                    <!-- dfdg -->
+                                    <div class="category-container" data-category="solvents">
+                                    <h2>Solvents</h2>
+                    
+                                    <div class="product solvents" data-category="solvents">
+                                        <h3>Toluene </h3>
+                                        <p>Description of Polyamide Toluene for Solvents category.</p>
+                                    </div>
+                                    <div class="product solvents" data-category="solvents">
+                                        <h3>Ethyl Acetate</h3>
+                                        <p>Description of Ethyl Acetate for Solvents category.</p>
+                                    </div>
+                                    <div class="product solvents" data-category="solvents">
+                                        <h3>MEK</h3>
+                                        <p>Description of MEK for Solvents category.</p>
+                                    </div>
+                                    <div class="product solvents" data-category="solvents">
+                                        <h3>MIBK</h3>
+                                        <p>Description of MIBK for Solvents category.</p>
+                                    </div>
+                                    <div class="product solvents" data-category="solvents">
+                                        <h3>IPA 99%</h3>
+                                        <p>Description of IPA 99% for Solvents category.</p>
+                                    </div>
+                                    <div class="product solvents" data-category="solvents">
+                                        <h3>MP (Methoxy Propylene)</h3>
+                                        <p>Description of MP(Methoxy Propylene) for Solvents category.</p>
+                                    </div>
+
+    
+                                </div>
+                                </div>
+
+                                <div class="category-products"> 
+                                    <!-- <div class="product" data-category="titaniumDioxide"> -->
+                                        <div class="product-list" data-category="titaniumDioxide"></div>
+                                        <!-- dfdg -->
+                                        <div class="category-container" data-category="titaniumDioxide">
+                                        <h2>Titanium Dioxide </h2>
+                        
+                                        <div class="product titaniumDioxide" data-category="titaniumDioxide">
+                                            <h3>R739 Sulphuric process </h3>
+                                            <p>Description of R739 Sulphuric process for Titanium Dioxide category.</p>
+                                        </div>
+                                </div>
+                                
+                                </div>
+                                <div class="category-products"> 
+                                    <!-- <div class="product" data-category="titaniumDioxide"> -->
+                                        <div class="product-list" data-category="solventDyes"></div>
+                                        <!-- dfdg -->
+                                        <div class="category-container" data-category="solventDyes">
+                                        <h2>Solvent Dyes </h2>
+                        
+                                        <div class="product solventDyes" data-category="solventDyes">
+                                            <h3>All kinds of Solvent dyes </h3>
+                                            <p>Description of All kinds of Solvent dyes for Solvent Dyes category.</p>
+                                        </div>
+                                </div>
+                                
+                                </div>
+
+                            
+
+
+
+
+                        </div>
+        
+                        <!-- Add more categories and products as needed -->
+        
+                    </div>
+            
+                    <!-- <div class="product-request-form">
+                        <h3>Product Request or Query</h3>
+                        <form id="requestForm">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" required>
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" rows="4" required></textarea>
+                            <button type="button" id="sendButton">Send</button>
+                        </form>
+                    </div> -->
+                    <form >
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                
+                        <label for="company">Company Name:</label>
+                        <input type="text" id="company" name="company" required><br>
+                
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required><br>
+                
+                        <label for="query">Query:</label><br>
+                        <textarea id="query" name="query" rows="4" required></textarea><br>
+                
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Get Connected Via Mail or Cell </p>
+						<h2> shine.bdlt@gmail.com  | 01917263745 </h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<!-- <section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<p class="special">More than THOUSANDS succesfull Services !</p>
+						<h2>Shine International LTD.</h2>
+						<p> Our Happy Partners !</p>
+					</header>
+					<section class="banner small">
+						<article>
+							<img src="images/slide01.jpg" alt="" />
+							<div class="inner">
+								
+							</div>
+						</article>
+						
+					</section>
+				</div>
+			</section> -->
+
+            <section id="three" class="wrapper style2">
+                <div class="inner">
+                    <section class="banner">   
+                        <article>
+                            <div class="inner">
+                                <ul class="icons">
+                                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                Made with <a href="https://www.linkedin.com/in/mostafizur-rahman-4074931ab/">Maze Brains</a>.
+                            </div> 
+                        </article> 
+                    </section>
+            
+                    <div class="copyright">
+                        Made with <a href="https://www.linkedin.com/in/mostafizur-rahman-4074931ab/">Maze Brains</a>.
+                    </div>
+            
+                    </div> 
+                    </section>
+		<!-- Footer -->
+			<!-- <footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+			<div class="copyright">
+				Made with <a href="https://www.linkedin.com/in/mostafizur-rahman-4074931ab/">Maze Brains</a>.
+			</div> -->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+   
+            <!-- <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var category = urlParams.get("category");
+            
+                    var products = document.querySelectorAll(".product");
+                    products.forEach(function (product) {
+                        var productCategory = product.getAttribute("data-category");
+                        if (category && productCategory !== category) {
+                            product.style.display = "none";
+                        }
+                    });
+                });
+            </script> -->
+            <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var urlParams = new URLSearchParams(window.location.search);
+                var category = urlParams.get("category");
+            
+                var categoryContainers = document.querySelectorAll(".category-container");
+                categoryContainers.forEach(function (container) {
+                    var containerCategory = container.getAttribute("data-category");
+                    if (category && containerCategory !== category) {
+                        container.style.display = "none";
+                    }
+                });
+            });
+            
+             </script>   
+
+            
+            <!-- Add this script to toggle the visibility of product lists -->
+            
+            <script>
+                document.getElementById("searchButton").addEventListener("click", function () {
+                    var input = document.getElementById("searchInput").value.toLowerCase(); // Convert search query to lowercase
+                    var products = document.querySelectorAll(".product");
+                    var showAll = true;
+            
+                    products.forEach(function (product) {
+                        var productName = product.querySelector("h3").textContent.toLowerCase(); // Convert product name to lowercase
+            
+                        if (productName.includes(input) || input === "") {
+                            product.style.display = "block";
+                            if (productName.includes(input)) {
+                                showAll = false;
+                            }
+                        } else {
+                            product.style.display = "none";
+                        }
+                    });
+            
+                    if (showAll) {
+                        products.forEach(function (product) {
+                            product.style.display = "block";
+                        });
+                    }
+                });
+				
+            </script>
+        
+            
+			<script>
+				// Add the "active" class to the current navigation link
+				var currentPage = window.location.pathname.split("/").pop(); // Get the current page's filename
+				var navigationLinks = document.querySelectorAll(".header-links li a");
+			
+				navigationLinks.forEach(function(link) {
+					if (link.getAttribute("href") === currentPage) {
+						link.classList.add("active");
+					}
+				});
+			</script>
+			
+              
+	</body>
+</html>
